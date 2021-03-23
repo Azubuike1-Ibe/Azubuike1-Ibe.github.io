@@ -256,6 +256,7 @@ img {vertical-align: middle;}
     margin: auto;
     padding-left: 25px;
     padding-right: 25px;
+    background: #fff;
 }
 
 .col-4 {
@@ -667,7 +668,6 @@ select:focus {
     width: 70vw;
     height: 80vh;
     margin: auto;
-    background: #fff;
 }
 
 #contact-map {
