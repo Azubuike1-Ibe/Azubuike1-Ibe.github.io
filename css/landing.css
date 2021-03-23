@@ -147,10 +147,12 @@ nav {
 }
 
 .hero .hero__intro h1 {
-    font-size: 4.5rem;
-    font-weight: 600;
+    font-size: 45px;
+    font-weight: 700;
     margin: 0.5rem 0;
 }
+
+
 
 .hero .hero__intro .btn-cta {
     padding: 0.4rem 5rem;
@@ -229,6 +231,45 @@ nav {
 }
 
 
+/*            
+
+                BLINKing H1                 
+
+
+                                            */
+
+
+
+.lighting {
+   margin: 40px;
+   text-align: left;
+}
+
+.lighting h1 {
+  font-family: 'Codystar', cursive !important;
+  font-size: 16px;
+  text-align: left;
+   font-weight: 400;
+   text-decoration: none;
+  -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+     from {
+      color: #fff;
+    text-shadow: 0 0 10px #fbff00, 0 0 20px #fbff00, 0 0 30px #fbff00, 
+    0 0 40px #fbff00, 0 0 50px #fbff00, 0 0 60px #fbff00, 0 0 70px #fbff00, 0 0 90px #fbff00;
+  }
+  
+  to {
+     color: gray;
+    text-shadow: 0 0 20px #fbff00, 0 0 30px #fbff00, 0 0 40px #fbff00, 
+    0 0 50px #fbff00, 0 0 60px #fbff00, 0 0 70px #fbff00, 0 0 80px #fbff00, 0 1 90px #fbff00;
+  }
+}
+
 
 
 /*******************
@@ -247,9 +288,7 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
-}
+
 
 .flex {
     display: flex;
@@ -583,7 +622,7 @@ Responsive Design
     }
 
     .hero .hero__intro h1 {
-        font-size: 3rem;
+        font-size: 20px;
     }
 
    .hero .hero__photo img {
@@ -622,64 +661,3 @@ body {
 
 }
 
-
-
-@media screen and (max-width: 320px) {
-
-    :root {
-    --nav-height: 40px;
-}
-
-
-    .btn {
-    padding: 3px;
-    width: 46vw;
-}
-
-.hero__intro iframe {
-    width: 95vw;
-    height: 40vh;
-    }
-
-    .hero {
-    height: calc(160vh - 60px);
-    }
-
-    .hero .hero__intro h1 {
-    line-height: 1;
-}
-
-}
-
-
-@media screen and (max-width: 375px) {
-
-    :root {
-    --nav-height: 40px;
-    }
-
-
-    .btn {
-    padding: 3px;
-    width: 46vw;
-    }
-
-    .hero__intro iframe {
-
-    width: 95vw;
-    height: 25vh;
-    }   
-
-   .hero {
-    height: calc(100vh - 60px);
-    }
-
-    .hero .hero__intro h1 {
-    line-height: 1;
-    }
-
-        .hero .hero__photo {
-    margin-top: 20px;
-    }
-
-}
